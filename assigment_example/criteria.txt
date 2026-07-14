@@ -1,0 +1,11 @@
+Requirements:
+
+1. There is first PT8200 Cisco router - 1 point
+2. There is second PT8200 Cisco router - 1 point
+3. The two PT8200 Cisco routers are connected to each other via a serial cable - 2 points
+
+
+Grading:
+0-1 points: 5
+2-3 points: 3
+4 points: 1

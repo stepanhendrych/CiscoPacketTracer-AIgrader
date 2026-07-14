@@ -1,0 +1,4 @@
+student_file,total_points,max_points,grade,c1: There is first PT8200 Cisco router (1),c2: There is second PT8200 Cisco router (1),c3: The two PT8200 Cisco routers are connected to each other via a serial cable (2),feedback
+student1_conneted.pkt,4,4,1,1,1,2,All criteria satisfied: two PT8200 routers present and connected via serial cable.
+student2_disconnected.pkt,2,4,3,1,1,0,Two PT8200 routers present but not connected via serial cable as required.
+student3_onlyOneRouter.pkt,2,4,3,1,1,0,"Two PT8200 routers are present but not connected via any cable, let alone a serial cable as required."
