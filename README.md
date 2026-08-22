@@ -26,7 +26,6 @@ PT-AI-Grader/
 ├── LICENSE
 ├── PTexplorer.py         # Decrypts .pkt files to XML
 ├── grader.py             # Main grading pipeline (CLI)
-├── main.py               # Thin entry point calling grader.run()
 ├── pyproject.toml        # Dependencies and project metadata
 ├── uv.lock               # Lock file for reproducible installs
 ├── README.md
@@ -46,14 +45,14 @@ PT-AI-Grader/
 
 ```bash
 git clone https://github.com/stepanhendrych/CiscoPacketTracer-AIgrader
-cd ciscoPacketTracer-AIgrader
+cd CiscoPacketTracer-AIgrader
 
 # Recommended: uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 
 # Or pip
-pip install -r requirements.txt  # if present
+pip install securedypkt openai python-dotenv
 ```
 
 Create a `.env` file in the project root:
@@ -189,4 +188,4 @@ Any OpenAI-compatible provider works (OpenAI, Groq, NVIDIA NIM, Mistral, local v
 
 ## License
 
-This project is licensed under the GNU v3 License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU GPLv3 License — see the [LICENSE](LICENSE) file for details.
