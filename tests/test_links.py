@@ -1,4 +1,4 @@
-#TODO: Not working, fix tommorow or later idk, if you are reading this, hello c:
+#TODO: Not working, fix tomorrow or later idk, if you are reading this, hello c:
 
 import PTexplorer
 xml_content = PTexplorer.decrypt_pkt_file('CPT-PKTtestFiles/twoPT8200-disconnected.pkt')
