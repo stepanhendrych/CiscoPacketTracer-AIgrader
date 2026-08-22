@@ -62,22 +62,15 @@ venv.bak/
 *.swo
 *~
 
-# macOS
+# macOS / Windows
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
 
-# MySQL
-mysql/
-
 # SQLite
 *.db
 
 # Packet Tracer files (optional — kept out of repo to avoid large binaries)
 # *.pkt
-
-# Misc
-.DS_Store
-Thumbs.db
