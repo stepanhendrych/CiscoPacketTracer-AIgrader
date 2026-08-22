@@ -30,7 +30,7 @@ PT-AI-Grader/
 ├── uv.lock               # Lock file for reproducible installs
 ├── README.md
 │
-└── assigment_example/    # Example assignment
+└── assignment_example/   # Example assignment
     ├── criteria.txt      # Free-text grading criteria + scale
     ├── template.pkt      # Teacher's reference solution
     └── submitted/        # Student submissions
@@ -88,7 +88,7 @@ LLM_CONTEXT_TOKENS=131072
 ### Run
 
 ```bash
-python grader.py assigment_example
+python grader.py assignment_example
 ```
 
 Options:

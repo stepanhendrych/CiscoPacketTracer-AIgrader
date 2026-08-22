@@ -501,7 +501,7 @@ def run() -> None:
     parser.add_argument(
         "assignment_folder",
         nargs="?",
-        default="assigment_example",
+        default="assignment_example",
         help="Folder containing criteria.txt, template.pkt, and submitted/*.pkt",
     )
     parser.add_argument(
