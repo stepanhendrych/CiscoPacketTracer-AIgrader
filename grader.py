@@ -240,12 +240,19 @@ def _call_llm_json(
                 model=model,
                 temperature=temperature,
                 response_format={"type": "json_object"},
+                timeout=120.0,  # 1. Přidán timeout pro velké šablony
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt},
                 ],
             )
-            content = resp.choices[0].message.content.strip()
+            
+            # 2. Bezpečné ošetření None odpovídajícího z vypršení/chyby API
+            raw_content = resp.choices[0].message.content
+            if raw_content is None:
+                raise ValueError("LLM returned empty content (None)")
+                
+            content = raw_content.strip()
             return json.loads(content)
         except Exception as e:
             last_err = e
